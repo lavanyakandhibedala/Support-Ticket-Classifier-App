@@ -131,6 +131,7 @@ def data_processing(tdata,algorithm):
         st.pyplot(plt)
         sns.set_theme(style="ticks", color_codes=True)
         sns.catplot(y="category", hue="sub_category1", kind="count",palette="pastel", edgecolor=".6", data=df) 
+        st.pyplot(plt)
 #         sns.catplot(y="deck", hue="class", kind="count",
 #             palette="pastel", edgecolor=".6",
 #             data=titanic)
