@@ -129,6 +129,7 @@ def data_processing(tdata,algorithm):
         df.groupby(cname).body.count().plot.bar(ylim=0)
         # plt.show()
         st.pyplot(plt)
+        sns.catplot(x="category", y="No of tickets", hue="sub_category1", kind="bar", data=df) 
         # chart_data = pd.DataFrame(df)
         # st.bar_chart(df,columns=[cname])
     show_bar_plot(X_test1,"category")
