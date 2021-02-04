@@ -129,7 +129,8 @@ def data_processing(tdata,algorithm):
         df.groupby(cname).body.count().plot.bar(ylim=0)
         # plt.show()
         st.pyplot(plt)
-        sns.catplot(x="category", hue="sub_category1", kind="count",palette="pastel", edgecolor=".6", data=df) 
+        sbn.set_theme(style="ticks", color_codes=True)
+        sns.catplot(y="category", hue="sub_category1", kind="count",palette="pastel", edgecolor=".6", data=df) 
 #         sns.catplot(y="deck", hue="class", kind="count",
 #             palette="pastel", edgecolor=".6",
 #             data=titanic)
